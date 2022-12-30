@@ -58,10 +58,11 @@ body{
  
 
 .containe{
-    height: 95vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
     
 }
 
