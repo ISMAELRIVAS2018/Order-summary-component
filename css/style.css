@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    /* primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    --fuente_principal:'Red Hat Display', sans-serif;
+
+}
+
+
+html{
+    font-size: 65.5%;
+    box-sizing: border-box;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    background-color: var(--Pale-blue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 50rem;
+    font-family: var(--fuente_principal);
+}
+
+@media (min-width:768px ) { 
+    body{
+     background-size: 100% 40rem;
+    }
+ }
+
+@media (min-width:1440px ) { 
+   body{
+    background-size: 100% 30rem;
+   }
+}
+
+@media (min-width:1700px ) { 
+    body{
+     background-size: 100% 52rem;
+    }
+ }
+ 
+
+.containe{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.container{
+    background-color:white;
+    border-radius: 1.5rem;
+    max-width: 34.5rem;
+    min-height: 55rem;
+    
+}
+
+.Summary img{
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+
+
+.Summary-titulo{
+    margin: 0;
+    padding:3rem 0;
+    padding-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.sumary-texto{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--Desaturated-blue);
+    text-align: center;
+    margin: 0;
+    padding: 0 3rem;
+    padding-bottom: 2rem;
+}
+
+
+.plan{
+    background-color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    margin:0 3.5rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 25% 30% 60%;
+    align-items: center;
+    justify-items: center;
+    /* gap: 1rem; */
+}
+
+.plan img{
+    width: 4rem;
+    height: 4rem;
+   
+}
+
+.plan-titulo{
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.plan-parrafo{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    padding: .5rem 0;
+    padding-bottom: 2rem;
+    color: var(--Desaturated-blue);
+    text-align: justify;
+}
+
+.plan-link{
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--Bright-blue);
+
+}
+
+.plan .grid:nth-child(1){
+    grid-column: 1/1;
+    grid-row: 1/4;
+}
+
+
+
+.plan .grid:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.plan .grid:nth-child(3){
+    grid-row: 1/2;
+    grid-column: 3/3;
+}
+
+
+.plan .grid:nth-child(4){
+    grid-column: 3/3;
+    grid-row: 1/3;
+}
+
+.btn{
+    padding: 0 4rem;
+    margin: 0;
+}
+
+.btn-proceed{
+    text-align: center;
+    font-weight: 900;
+    color: #ffffff;
+    background-color: var(--Bright-blue);
+    border-radius: 1rem;
+    padding: 1.3rem;
+    border: none;
+    transition:  background-color .3s ease-in-out;
+    width: 100%;
+    box-shadow: 0 15px 10px var( --Pale-blue);
+    cursor: pointer;
+}
+
+.btn-cancelar{
+    text-align: center;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.3rem;
+    border: none;
+    transition:  background-color .3s ease-in-out;
+    width: 100%;
+    margin: 2rem 0;
+    cursor: pointer;
+    
+}
+
+.btn-proceed:hover{
+    background-color: #3020e096;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+  }
+
