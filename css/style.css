@@ -40,19 +40,19 @@ body{
 
 @media (min-width:768px ) { 
     body{
-     background-size: 100% 40rem;
+     background-size: 100% 45rem;
     }
  }
 
 @media (min-width:1440px ) { 
    body{
-    background-size: 100% 30rem;
+    background-size: 100% 45rem;
    }
 }
 
 @media (min-width:1700px ) { 
     body{
-     background-size: 100% 52rem;
+     background-size: 100% 55rem;
     }
  }
  
