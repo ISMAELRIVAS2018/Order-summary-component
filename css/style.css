@@ -34,13 +34,13 @@ body{
     background-image: url(../images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100% 50rem;
+    background-size: 100% 40rem;
     font-family: var(--fuente_principal);
 }
 
 @media (min-width:768px ) { 
     body{
-     background-size: 100% 45rem;
+     background-size: 100% 30rem;
     }
  }
 
